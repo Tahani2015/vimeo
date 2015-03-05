@@ -1,0 +1,23 @@
+h3 Results
+table.table.table-striped
+	thead
+		tr
+			th Type
+			th Date
+			th Video_title
+			th Video_url
+			th Video_thumbnail
+			th Video_tags
+	tbody
+	each item in data
+		tr
+			td= item.type
+			td= item.date
+			td= item.video_title
+			td
+				a(href=item.video_url)
+					= item.video_url
+			td
+				img(src=item.video_thumbnail_small)
+			td= item.video_tags
+			

@@ -1,0 +1,20 @@
+h5 Search
+.row
+    .col-md-8
+        .form-group.form-group-default
+            label UserId / UserName           
+            input#id.form-control(type='text', required='')                
+    .col-md-4                         
+        button.btn.btn-primary(onClick='videos.searchByUserId($("#id").val())') Search
+
+
+h5 Examples
+ul
+    li
+        a(href="#" onClick='videos.searchByUserId(628)') Alex
+    li
+        a(href="#" onClick='videos.searchByUserId(101193)') Brad 
+    li
+        a(href="#" onClick='videos.searchByUserId(251580)') Austin 
+    li
+        a(href="#" onClick='videos.searchByUserId(4280938)') Øredev Conference
