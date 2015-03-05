@@ -1,0 +1,17 @@
+body::selection {
+	background: #fef8ae; /* Safari */
+	}
+body::-moz-selection {
+	background: #fef8ae; /* Firefox */
+}
+body{
+	color:#62605a;
+	font-size: 13.5px;
+}
+pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key { color: red; }
+

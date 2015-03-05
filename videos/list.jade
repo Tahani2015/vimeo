@@ -1,0 +1,26 @@
+h3 Results
+table.table.table-striped
+    thead
+        tr
+            th Title 
+            th URL
+            th thumbnail
+            th Upload_date
+            th Likes
+            th Plays
+            th Comments
+            th Duration
+    tbody
+    each item in data
+        tr
+            td= item.title
+            td
+                a(href=item.url)
+                    = item.url
+            td
+                img(src=item.thumbnail_small)
+            td= item.upload_date
+            td= item.stats_number_of_likes
+            td= item.stats_number_of_plays
+            td= item.stats_number_of_comments
+            td= item.duration+ " sec"
